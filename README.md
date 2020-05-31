@@ -12,6 +12,7 @@ react-native link react-native-firebase
 
 This didnt link properly for me though, so I had to add, in the MainActivity.java
 
+
 import io.invertase.firebase.RNFirebasePackage;
 
 import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
@@ -36,13 +37,17 @@ new RNFirebaseNotificationsPackage()
 
 }
 
+
 After this I had to had, the following to the settings.gradle file
+
 
 include ':react-native-firebase'                       
 
 project(':react-native-firebase').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-firebase/android')
 
+
 And then this to the build.gradle file
+
 
 dependencies {
 
